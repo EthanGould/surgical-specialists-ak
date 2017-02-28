@@ -1,15 +1,18 @@
-$module-name: 'header';
+/**
+ * Site Header
+ */
 
-$lightgray: #EFEFEF;
-$orange: #FF5500;
+$module-name: 'header';
 
 // .header {}
 .#{$module-name} {
 	padding: 40px 20px 10px;
 	background-color: $lightgray;
+	text-align: center;
 
 	&__content {
-		text-align: center;
+		max-width: $max-site-width;
+		margin: 0 auto;
 	}
 
 	&__text {
@@ -26,5 +29,19 @@ $orange: #FF5500;
 	&__img {
 		width: 35px;
 		margin-right: 5px;
+	}
+}
+
+// Screens > 700px
+@media( min-width: $mid)  {
+	.#{$module-name} {
+		
+		&__text {
+			font-size: 36px;
+		}
+
+		&__img {
+			width: 40px;
+		}
 	}
 }

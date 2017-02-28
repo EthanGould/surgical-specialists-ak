@@ -2,6 +2,9 @@
  *	Import modules styles.
  */
 
+// Element resets
 @import 'reset';
-// Header styles.
+// Site-wide variables
+@import 'variables';
+// Header styles
 @import 'modules/header';
