@@ -1,0 +1,7 @@
+$module-name: 'header';
+
+// .header {}
+.#{$module-name} {
+	padding: 20px;
+	background-color: green;
+}
