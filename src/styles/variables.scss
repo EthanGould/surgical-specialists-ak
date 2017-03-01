@@ -9,8 +9,12 @@ $max-site-width: 960px;
 $mid: 700px;
 
 /* Colors */
-$lightblue: lightblue;
 $blue: steelblue;
-$darkblue: darkblue;
+$lightblue: lighten($blue, 30%);
+$darkblue: darken($blue, 30%);
 $lightgray: #EFEFEF;
 $gray: lightgray;
+$white: white;
+
+/* Fonts */
+$open-sans: 'Open Sans', sans-serif;

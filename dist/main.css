@@ -18,12 +18,13 @@ html * {
 /* Sizing */
 /* Breakpoints */
 /* Colors */
+/* Fonts */
 /**
  * Site Header
  */
 .header {
   padding: 10px;
-  background: linear-gradient(lightblue, white 50%);
+  background: linear-gradient(#b2cce1, white 50%);
   text-align: center; }
   .header__content {
     max-width: 960px;
@@ -31,30 +32,33 @@ html * {
   .header__img {
     width: 200px; }
 
-@media (min-width: 700px) {
-  .header__img {
-    width: 40px; } }
 /**
  * Site Navigation
  */
 .nav {
   display: table;
-  width: 100%; }
+  width: 100%;
+  background-color: #b2cce1; }
   .nav__items {
     display: flex;
+    max-width: 960px;
+    margin: 0 auto;
     list-style: none; }
   .nav__item {
     flex-grow: 1;
-    padding: 10px;
-    background-color: lightblue;
     text-align: center;
-    transition: background-color 0.3s; }
+    transition: background-color 0.1s; }
     .nav__item:hover {
-      background-color: lightgray; }
+      background-color: steelblue; }
+      .nav__item:hover a {
+        color: white; }
   .nav__link {
-    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    color: darkblue; }
+    color: #1b3246; }
 
 /**
  * Site Hero

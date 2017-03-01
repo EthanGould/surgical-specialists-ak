@@ -7,7 +7,7 @@ $module-name: 'header';
 // .header {}
 .#{$module-name} {
 	padding: 10px;
-	background: linear-gradient(lightblue, white 50%);
+	background: linear-gradient($lightblue, $white 50%);
 	text-align: center;
 
 	&__content {
@@ -24,8 +24,5 @@ $module-name: 'header';
 @media( min-width: $mid)  {
 	.#{$module-name} {
 
-		&__img {
-			width: 40px;
-		}
 	}
 }
