@@ -7,7 +7,9 @@ ul,
 h1,
 h2 {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+html * {
   box-sizing: border-box; }
 
 /**
@@ -20,29 +22,38 @@ h2 {
  * Site Header
  */
 .header {
-  padding: 40px 20px 10px;
-  background-color: #EFEFEF;
+  padding: 10px;
+  background: linear-gradient(lightblue, white 50%);
   text-align: center; }
   .header__content {
     max-width: 960px;
     margin: 0 auto; }
-  .header__text {
-    display: inline-block;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    letter-spacing: -1px;
-    color: #FF5500;
-    vertical-align: text-bottom; }
   .header__img {
-    width: 35px;
-    margin-right: 5px; }
+    width: 200px; }
 
 @media (min-width: 700px) {
-  .header__text {
-    font-size: 36px; }
   .header__img {
     width: 40px; } }
+/**
+ * Site Navigation
+ */
+.nav {
+  display: table;
+  width: 100%; }
+  .nav__items {
+    display: flex;
+    list-style: none; }
+  .nav__item {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;
+    transition: background-color 0.3s; }
+    .nav__item:hover {
+      background-color: lightgray; }
+  .nav__link {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: darkblue; }
 
 /*# sourceMappingURL=main.css.map */
