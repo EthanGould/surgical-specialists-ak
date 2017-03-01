@@ -1,6 +1,13 @@
 /**
  *	Import modules styles.
  */
+/**
+ * Site-wide variables.
+ */
+/* Sizing */
+/* Breakpoints */
+/* Colors */
+/* Fonts */
 body,
 p,
 ul,
@@ -10,15 +17,9 @@ h2 {
   padding: 0; }
 
 html * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
-/**
- * Site-wide variables.
- */
-/* Sizing */
-/* Breakpoints */
-/* Colors */
-/* Fonts */
 /**
  * Site Header
  */
@@ -40,7 +41,6 @@ html * {
 .nav {
   display: table;
   width: 100%;
-  margin-bottom: 10px;
   background-color: #99ccff; }
   .nav__items {
     display: flex;
@@ -59,6 +59,7 @@ html * {
     padding: 10px 0;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
+    text-transform: capitalize;
     color: #003366; }
 
 @media (min-width: 700px) {
@@ -74,5 +75,40 @@ html * {
     text-align: center;
     font-weight: 900;
     color: white; }
+
+/**
+ * About Section
+ */
+.section {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #EFEFEF;
+  border-bottom: 1px solid black; }
+  .section#about {
+    background: linear-gradient(#94da88, transparent 70%); }
+  .section#team {
+    background: linear-gradient(#99ccff, transparent 50%); }
+  .section__header {
+    display: inline-block;
+    padding: 20px 5px 5px;
+    margin: 0 0 20px 20px;
+    border-bottom: 1px solid #007FFF; }
+  .section__content {
+    max-width: 960px;
+    margin: 0 auto; }
+  .section__text {
+    padding: 20px; }
+  .section__about {
+    display: table;
+    position: relative;
+    margin-bottom: 15px;
+    padding: 10px 20px 10px 10px; }
+  .section__about-text {
+    width: 78%;
+    float: left; }
+  .section__about-img {
+    width: 20%;
+    margin-right: 2%;
+    float: left; }
 
 /*# sourceMappingURL=main.css.map */

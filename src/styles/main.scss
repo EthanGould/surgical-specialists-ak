@@ -2,13 +2,16 @@
  *	Import modules styles.
  */
 
-// Element resets
-@import 'reset';
 // Site-wide variables
 @import 'variables';
+// Element resets
+@import 'reset';
 // Header styles
 @import 'modules/header';
 // Site Navigation
 @import 'modules/nav';
 // Hero styles
 @import 'modules/hero';
+// Section styles
+@import 'modules/section';
+

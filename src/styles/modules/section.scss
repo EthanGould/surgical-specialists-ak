@@ -1,0 +1,55 @@
+/**
+ * About Section
+ */
+
+$module-name: 'section';
+
+// .section {}
+.#{$module-name} {
+	min-height: 50vh;
+	width: 100%;
+	background-color: $lightgray;
+	border-bottom: 1px solid black;
+
+	&#about {
+		background: linear-gradient(rgb(148, 218, 136), transparent 70%);
+	}
+
+	&#team {
+		background: linear-gradient( $lightblue, transparent 50%);
+	}
+
+	&__header {
+		display: inline-block;
+		padding: 20px 5px 5px;
+		margin: 0 0 20px 20px;
+		border-bottom: 1px solid $blue;
+	}
+
+	&__content {
+		max-width: $max-site-width;
+		margin: 0 auto;
+	}
+
+	&__text {
+		padding: 20px;
+	}
+
+	&__about {
+		display: table;
+		position: relative;
+		margin-bottom: 15px;
+		padding: 10px 20px 10px 10px;
+	}
+
+	&__about-text {
+		width: 78%;
+		float: left;
+	}
+
+	&__about-img {
+		width: 20%;
+		margin-right: 2%;
+		float: left;
+	}
+}
