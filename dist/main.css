@@ -56,4 +56,15 @@ html * {
     text-decoration: none;
     color: darkblue; }
 
+/**
+ * Site Hero
+ */
+.hero {
+  background: #94da88; }
+  .hero__text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+    color: white; }
+
 /*# sourceMappingURL=main.css.map */
