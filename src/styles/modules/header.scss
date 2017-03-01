@@ -6,7 +6,6 @@ $module-name: 'header';
 
 // .header {}
 .#{$module-name} {
-	padding: 10px;
 	background: linear-gradient($lightblue, $white 50%);
 	text-align: center;
 
@@ -23,6 +22,8 @@ $module-name: 'header';
 // Screens > 700px
 @media( min-width: $mid)  {
 	.#{$module-name} {
-
+		&__img {
+			width: 300px;
+		}
 	}
 }

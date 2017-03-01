@@ -23,8 +23,7 @@ html * {
  * Site Header
  */
 .header {
-  padding: 10px;
-  background: linear-gradient(#b2cce1, white 50%);
+  background: linear-gradient(#99ccff, white 50%);
   text-align: center; }
   .header__content {
     max-width: 960px;
@@ -32,34 +31,39 @@ html * {
   .header__img {
     width: 200px; }
 
+@media (min-width: 700px) {
+  .header__img {
+    width: 300px; } }
 /**
  * Site Navigation
  */
 .nav {
   display: table;
   width: 100%;
-  background-color: #b2cce1; }
+  margin-bottom: 10px;
+  background-color: #99ccff; }
   .nav__items {
     display: flex;
-    max-width: 960px;
+    max-width: 600px;
     margin: 0 auto;
     list-style: none; }
   .nav__item {
     flex-grow: 1;
     text-align: center;
     transition: background-color 0.1s; }
-    .nav__item:hover {
-      background-color: steelblue; }
-      .nav__item:hover a {
-        color: white; }
+    .nav__item:hover a {
+      color: #007FFF; }
   .nav__link {
     display: inline-block;
     width: 100%;
-    padding: 5px 0;
+    padding: 10px 0;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    color: #1b3246; }
+    color: #003366; }
 
+@media (min-width: 700px) {
+  .nav {
+    background-color: transparent; } }
 /**
  * Site Hero
  */
