@@ -1,0 +1,16 @@
+/**
+ * Site Hero
+ */
+
+$module-name: 'hero';
+
+// .hero {}
+.#{$module-name} {
+  background: rgb(148, 218, 136);
+  &__text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+  }
+}

@@ -44,5 +44,15 @@ h2 {
     font-size: 36px; }
   .header__img {
     width: 40px; } }
+/**
+ * Site Hero
+ */
+.hero {
+  background: #94da88; }
+  .hero__text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
