@@ -107,7 +107,7 @@ html * {
   .section__text {
     padding: 20px;
     letter-spacing: 2px;
-    line-height: 25px; }
+    line-height: 20px; }
   .section__about {
     display: table;
     position: relative;
