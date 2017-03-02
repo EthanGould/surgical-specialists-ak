@@ -71,10 +71,18 @@ html * {
 .hero {
   background: #94da88; }
   .hero__text {
+    padding-top: 15px;
     font-size: 30px;
     text-align: center;
     font-weight: 900;
-    color: white; }
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  .hero__sub-text {
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-decoration: underline; }
 
 /**
  * About Section
