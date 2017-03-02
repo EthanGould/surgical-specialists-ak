@@ -6,7 +6,7 @@ $module-name: 'hero';
 
 // .hero {}
 .#{$module-name} {
-  background: rgb(148, 218, 136);
+  background: $earth-green; 
   &__text {
     font-size: 30px;
     text-align: center;
