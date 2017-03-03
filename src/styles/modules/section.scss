@@ -52,17 +52,37 @@ $module-name: 'section';
 		position: relative;
 		margin-bottom: 15px;
 		padding: 10px 20px 10px 10px;
+		text-align: center;
 	}
 
-	&__about-text {
+	&__about-info {
 		width: 78%;
-		float: left;
+    margin: 0px auto;
+    letter-spacing: 2px;
+    line-height: 20px;
+	}
+
+	&__about-name {
+		width: 78%;
+    margin: 0px auto;
+		font-size: 27px;
+    font-weight: bold;
+
+	}
+
+	&__about-specialty {
+		width: 78%;
+    margin: 0px auto 7px;
+		font-size: 22px;
+    font-weight: 200;
 	}
 
 	&__about-img {
-		width: 20%;
-		margin-right: 2%;
-		float: left;
+		width: 50%;
+    margin: 0 auto;
+		margin-bottom: 20px;
+    display: block;
+    border-radius: 50%;
 	}
 
 	// Map Section.
