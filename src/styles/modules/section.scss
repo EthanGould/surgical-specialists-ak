@@ -55,7 +55,6 @@ $module-name: 'section';
 
 	&__text {
 		padding: 20px;
-    letter-spacing: 2px;
     line-height: 20px;
 	}
 
@@ -70,24 +69,23 @@ $module-name: 'section';
 
 	&__about-info {
 		width: 78%;
-    margin: 0px auto;
-    letter-spacing: 2px;
+    margin: 0px auto 30px;
     line-height: 20px;
 	}
 
 	&__about-name {
 		width: 78%;
-    margin: 0px auto;
-		font-size: 27px;
+    margin: 0px auto 5px;
+		font-size: 24px;
     font-weight: bold;
 
 	}
 
 	&__about-specialty {
 		width: 78%;
-    margin: 0px auto 7px;
-		font-size: 22px;
-    font-weight: 200;
+		margin: 0px auto 15px;
+		font-size: 18px;
+		color: $darkblue;
 	}
 
 	&__about-img {
@@ -108,7 +106,3 @@ $module-name: 'section';
 		}
 	}
 }
-
-
-
-

@@ -43,13 +43,13 @@ html * {
  */
 .nav {
   display: table;
-  width: 100%;
-  background-color: #99ccff; }
+  width: 100%; }
   .nav__items {
     display: flex;
     max-width: 600px;
     margin: 0 auto;
-    list-style: none; }
+    list-style: none;
+    color: black; }
   .nav__item {
     flex-grow: 1;
     text-align: center;
@@ -129,7 +129,6 @@ html * {
       max-width: 100%; }
   .section__text {
     padding: 20px;
-    letter-spacing: 2px;
     line-height: 20px; }
   .section__about {
     display: table;
@@ -139,19 +138,18 @@ html * {
     text-align: center; }
   .section__about-info {
     width: 78%;
-    margin: 0px auto;
-    letter-spacing: 2px;
+    margin: 0px auto 30px;
     line-height: 20px; }
   .section__about-name {
     width: 78%;
-    margin: 0px auto;
-    font-size: 27px;
+    margin: 0px auto 5px;
+    font-size: 24px;
     font-weight: bold; }
   .section__about-specialty {
     width: 78%;
-    margin: 0px auto 7px;
-    font-size: 22px;
-    font-weight: 200; }
+    margin: 0px auto 15px;
+    font-size: 18px;
+    color: #003366; }
   .section__about-img {
     width: 50%;
     margin: 0 auto;
