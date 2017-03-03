@@ -4,6 +4,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="src/styles/lib/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="dist/main.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="src/scripts/main.js"></script>
 	</head>
 	<body>
 
@@ -17,6 +20,13 @@
 		<!-- Navigation -->
 		<nav class="nav">
 			<ul class="nav__items">
+
+				<!-- visible when scrolled -->
+				<li class="nav__item nav__item--scrolled"><img src="./images/SSA-logo.png"></li>
+				<li class="nav__item nav__item--scrolled">Surgical Specialists of Alaska</li>
+				<li class="nav__item nav__item--scrolled"><a class="nav__link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+
+				<!-- NOT visible when scrolled -->
 				<li class="nav__item"><a class="nav__link" href="#">home</a></li>
 				<li class="nav__item"><a class="nav__link" href="#about">about</a></li>
 				<li class="nav__item"><a class="nav__link" href="#team">team</a></li>
@@ -25,10 +35,10 @@
 		</nav>
 
 		<!-- Hero -->
-		<div class="hero">
+<!-- 		<div class="hero">
 			<h2 class="hero__text">Premier provider of quality full-service surgical care</h2>
 			<h2 class="hero__sub-text">Make an appointment today! Contact us at (907)277-9700</h2>
-		</div>
+		</div> -->
 
 		<!-- About -->
 		<div id="about" class="section">
@@ -99,5 +109,6 @@
 				</ul>
 			</div>
 		</div>
+
 	</body>
 </html>

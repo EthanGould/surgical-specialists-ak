@@ -6,7 +6,7 @@ $module-name: 'header';
 
 // .header {}
 .#{$module-name} {
-	background: linear-gradient($lightblue, $white 50%);
+	background: linear-gradient($lightblue, $white 50%, $lightblue 100%);
 	text-align: center;
 
 	&__content {
