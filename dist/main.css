@@ -113,12 +113,19 @@ html * {
     position: relative;
     margin-bottom: 15px;
     padding: 10px 20px 10px 10px; }
-  .section__about-text {
+  .section__about-info {
     width: 78%;
-    float: left; }
+    margin: 0px auto; }
+  .section__about-name {
+    width: 78%;
+    margin: 0px auto; }
+  .section__about-specialty {
+    width: 78%;
+    margin: 0px auto; }
   .section__about-img {
-    width: 20%;
-    margin-right: 2%;
-    float: left; }
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */

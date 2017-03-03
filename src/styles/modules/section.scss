@@ -44,14 +44,25 @@ $module-name: 'section';
 		padding: 10px 20px 10px 10px;
 	}
 
-	&__about-text {
+	&__about-info {
 		width: 78%;
-		float: left;
+    margin: 0px auto;
+	}
+
+	&__about-name {
+		width: 78%;
+    margin: 0px auto;
+	}
+
+	&__about-specialty {
+		width: 78%;
+    margin: 0px auto;
 	}
 
 	&__about-img {
-		width: 20%;
-		margin-right: 2%;
-		float: left;
+		width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
 	}
 }
