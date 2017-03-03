@@ -14,8 +14,10 @@ $lightblue: lighten($blue, 30%);
 $darkblue: darken($blue, 30%);
 $lightgray: #EFEFEF;
 $gray: lightgray;
+$darkgray: darken($gray, 30%);
 $white: white;
-$earth-green:  rgb(148, 218, 136);
+$earth-green: rgb(148, 218, 136);
+$black: black;
 
 /* Fonts */
 $open-sans: 'Open Sans', sans-serif;

@@ -6,15 +6,25 @@ $module-name: 'hero';
 
 // .hero {}
 .#{$module-name} {
+  padding: 20px 25px;
   background: $earth-green;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+  border-bottom: 1px solid $black;
+
   &__text {
+    margin-bottom: 20px;
     padding-top: 15px;
     font-size: 30px;
-    text-align: center;
     font-weight: 900;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
+
+  &__sub-text {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
   &__img {
     width: 400px;
   }
