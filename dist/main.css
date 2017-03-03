@@ -213,8 +213,9 @@ html * {
     .section__content--bleed {
       max-width: 100%; }
   .section__text {
-    padding: 20px 0;
-    line-height: 20px; }
+    padding: 12px 0;
+    line-height: 20px;
+    font-size: 14px; }
   .section__about {
     display: table;
     position: relative;
