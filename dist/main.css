@@ -43,13 +43,13 @@ html * {
  */
 .nav {
   display: table;
-  width: 100%;
-  background-color: #99ccff; }
+  width: 100%; }
   .nav__items {
     display: flex;
     max-width: 600px;
     margin: 0 auto;
-    list-style: none; }
+    list-style: none;
+    color: black; }
   .nav__item {
     flex-grow: 1;
     text-align: center;

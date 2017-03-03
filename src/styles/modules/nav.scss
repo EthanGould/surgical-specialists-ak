@@ -8,13 +8,13 @@ $module-name: 'nav';
 .#{$module-name} {
 	display: table;
 	width: 100%;
-	background-color: $lightblue;
 
 	&__items {
 		display: flex;
 		max-width: 600px;
 		margin: 0 auto;
 		list-style: none;
+		color: $black;
 	}
 
 	&__item {
@@ -45,7 +45,3 @@ $module-name: 'nav';
 		background-color: transparent;
 	}
 }
-
-
-
-
