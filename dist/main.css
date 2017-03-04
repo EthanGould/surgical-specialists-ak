@@ -169,7 +169,7 @@ html * {
 
 @media (min-width: 700px) {
   .slide {
-    height: 60vh;
+    height: 56vh;
     background: #94da88;
     border-bottom: 1px solid black; }
 
