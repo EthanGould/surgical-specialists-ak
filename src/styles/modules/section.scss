@@ -13,6 +13,10 @@ $module-name: 'section';
 	background-color: $white;
 	border-bottom: 1px solid $black;
 
+	&#slide {
+		background: rgb(148, 218, 136);
+	}
+
 	&#about {
 		background: linear-gradient(rgb(148, 218, 136), transparent 70%);
 	}
