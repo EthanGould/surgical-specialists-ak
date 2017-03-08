@@ -1,27 +1,27 @@
 $(function() {
 
     /* SET PARAMETERS */
-    var change_img_time = 5000;
-    var transition_speed = 300;
+    var changeImgTime = 5000;
+    var transitionSpeed = 300;
 
-    var simple_slideshow = $("#exampleSlider"),
-        listItems = simple_slideshow.children('li'),
+    var simpleSlideshow = $('.js-slider'),
+        listItems = simpleSlideshow.children('li'),
         listLen = listItems.length,
         i = 0,
 
         changeList = function() {
 
-            listItems.eq(i).fadeOut(transition_speed, function() {
+            listItems.eq(i).fadeOut(transitionSpeed, function() {
                 i += 1;
                 if (i === listLen) {
                     i = 0;
                 }
-                listItems.eq(i).fadeIn(transition_speed);
+                listItems.eq(i).fadeIn(transitionSpeed);
             });
 
         };
 
     listItems.not(':first').hide();
-    setInterval(changeList, change_img_time);
+    setInterval(changeList, changeImgTime);
 
 });

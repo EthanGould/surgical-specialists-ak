@@ -68,13 +68,13 @@ $module-name: 'section';
 	&__about {
 		display: table;
 		position: relative;
-		margin-bottom: 15px;
+		margin-bottom: 35px;
 		padding: 15px;
 		text-align: center;
 	}
 
 	&__about-info {
-    margin: 0px auto 30px;
+    margin: 0px auto;
     line-height: 20px;
 	}
 
@@ -130,13 +130,11 @@ $module-name: 'section';
 		}
 
 		&__about-img-left {
-    	width: 20%;
-    	margin: 0 auto;
-    	margin-bottom: 20px;
+    	width: 17%;
+    	margin: 0 3% 20px 0;
     	display: inline-block;
     	border-radius: 50%;
     	float: left;
-    	margin-right: 15px;
 		}
 
 		&__about-name-left {
@@ -150,6 +148,8 @@ $module-name: 'section';
 		&__about-info-left {
     	margin: 0px auto 30px;
     	line-height: 20px;
+			float: right;
+			width: 80%;
 		}
 
 		&__about-right {
@@ -161,13 +161,11 @@ $module-name: 'section';
 		}
 
 		&__about-img-right {
-    	width: 20%;
-    	margin: 0 auto;
-    	margin-bottom: 20px;
+    	width: 17%;
+    	margin: 0 0 20px 3%;
     	display: inline-block;
     	border-radius: 50%;
     	float: right;
-    	margin-left: 15px;
 		}
 
 		&__about-name-right {
@@ -181,6 +179,8 @@ $module-name: 'section';
 		&__about-info-right {
     	margin: 0px auto 30px;
     	line-height: 20px;
+			float: left;
+			width: 80%;
 		}
 	}
 }
