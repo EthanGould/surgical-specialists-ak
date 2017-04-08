@@ -98,6 +98,45 @@ $module-name: 'section';
     border-radius: 50%;
 	}
 
+	// Policies Section.
+	&__content {
+		overflow: auto;
+	}
+
+	&__content-tile {
+		width: 100%;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		padding: 15px;
+		box-shadow: 0 5px 10px lightgray;
+
+		&--full {
+			background-image: radial-gradient(ellipse, white 0%,  yellow 150%);
+		}
+
+		&--left {
+			background-image: radial-gradient(ellipse, white 0%, $lightblue 150%);
+		}
+
+		&--right {
+			background-image: radial-gradient(ellipse, white 0%, pink 150%);
+		}
+	}
+
+	&__content-list {
+		padding: 15px;
+
+		&-header {
+			text-align: center;
+			text-decoration: underline;
+			font-weight: 700;
+		}
+
+		&-item {
+			padding: 10px 0;
+		}
+	}
+
 	// Map Section.
 	&__map {
 
@@ -121,6 +160,24 @@ $module-name: 'section';
 
 @media( min-width: $mid)  {
 	.#{$module-name} {
+
+		// Policies Section
+		&__content-tile--full {
+			width: 100%;
+		}
+
+		&__content-tile--left,
+		&__content-tile--right {
+			float: left;
+			width: 49%;
+		}
+
+		&__content-tile--left {
+			margin-right: 2%;
+		}
+
+
+		// About Section.
 		&__about-left {
     	display: table;
     	position: relative;
