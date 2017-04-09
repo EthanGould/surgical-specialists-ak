@@ -49,6 +49,16 @@ $module-name: 'section';
 		}
 	}
 
+	&__subheader {
+		display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px 5px 5px;
+    border-bottom: 1px solid black;
+    max-width: 960px;
+    font-size: 16px;
+    font-weight: 700;
+	}
+
 	&__content {
 		max-width: $max-site-width;
 		margin: 0 auto;
@@ -98,7 +108,7 @@ $module-name: 'section';
     border-radius: 50%;
 	}
 
-	// Policies Section.
+	// Policies & Patients Section.
 	&__content {
 		overflow: auto;
 	}
@@ -119,6 +129,22 @@ $module-name: 'section';
 		}
 
 		&--right {
+			background-image: radial-gradient(ellipse, white 0%, pink 150%);
+		}
+
+		&--appointments {
+			background-image: radial-gradient(ellipse, white 0%,  green 150%);
+		}
+
+		&--emergencies {
+			background-image: radial-gradient(ellipse, white 0%, purple 150%);
+		}
+
+		&--refills {
+			background-image: radial-gradient(ellipse, white 0%, $lightblue 150%);
+		}
+
+		&--options {
 			background-image: radial-gradient(ellipse, white 0%, pink 150%);
 		}
 	}
@@ -160,6 +186,22 @@ $module-name: 'section';
 
 @media( min-width: $mid)  {
 	.#{$module-name} {
+
+		// Patients Section
+		&__content-tile--appointments {
+			width: 100%;
+		}
+
+		&__content-tile--emergencies,
+		&__content-tile--options {
+			float: left;
+			width: 49%;
+		}
+
+		&__content-tile--refills {
+			float: right;
+			width: 49%;
+		}
 
 		// Policies Section
 		&__content-tile--full {
