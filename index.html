@@ -59,8 +59,8 @@
 		<div id="patients" class="section">
 			<div class="section__content">
 				<h2 class="section__header"><i class="fa fa-users" aria-hidden="true"></i> Patients</h2>
-				<p class="section__subheader">Welcome to SSOA! Thank you for choosing us for your health care needs. The following information is intended to provide a summary of our practice's policies and procedures. For any questions or concerns you may contact our office staff from 9:00 AM to 4:30 PM, Monday through Friday at 907 . 277 . 9700 [option 1] for our Anchorage clinic; or from 9:00 AM to 4:30 pm Monday thru Thursday at 907 . 277 . 9700 [option 2] for our Wasilla clinic. </p>
-				<div class="section__content-tile section__content-tile--appointments">
+				<p class="section__text">Welcome to SSOA! Thank you for choosing us for your health care needs. The following information is intended to provide a summary of our practice's policies and procedures. For any questions or concerns you may contact our office staff from 9:00 AM to 4:30 PM, Monday through Friday at 907 . 277 . 9700 [option 1] for our Anchorage clinic; or from 9:00 AM to 4:30 pm Monday thru Thursday at 907 . 277 . 9700 [option 2] for our Wasilla clinic. </p>
+				<div id="appointments" class="section__content-tile section__content-tile--full">
 					<p class="section__content-list-header">Appointments</p>
 					<ul class="section__content-list">
 						<li class="section__content-list-item">New patients should arrive 30 minutes prior to your first visit to complete the necessary paperwork before your scheduled appointment time.
@@ -73,14 +73,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="section__content-tile section__content-tile--emergencies">
-					<p class="section__content-list-header">Emergencies</p>
-					<ul class="section__content-list">
-						<li class="section__content-list-item">If you are experiencing an emergency call 911 or go to the nearest hospital immediately.
-						</li>
-					</ul>
-				</div>
-				<div class="section__content-tile section__content-tile--refills">
+				<div id="prescription-refills" class="section__content-tile section__content-tile--left">
 					<p class="section__content-list-header">Prescription Refills</p>
 					<ul class="section__content-list">
 						<li class="section__content-list-item">If you require a refill of a prescription, please contact your pharmacy directly, so that your refill request can be submitted to our office electronically.
@@ -91,7 +84,14 @@
 						</li>
 					</ul>
 				</div>
-				<div class="section__content-tile section__content-tile--options">
+				<div id="emergencies" class="section__content-tile section__content-tile--right">
+					<p class="section__content-list-header">Emergencies</p>
+					<ul class="section__content-list">
+						<li class="section__content-list-item">If you are experiencing an emergency call 911 or go to the nearest hospital immediately.
+						</li>
+					</ul>
+				</div>
+				<div id="options" class="section__content-tile section__content-tile--right">
 					<p class="section__content-list-header">Payment Options</p>
 					<ul class="section__content-list">
 						<li class="section__content-list-item">All co-payments, co-insurances and applied deductibles are to be paid at the time of service.
@@ -105,11 +105,47 @@
 			</div>
 		</div>
 
+		<!-- Download Forms -->
+		<div id="policies" class="section">
+			<div class="section__content">
+				<h2 class="section__header"><i class="fa fa-location-arrow" aria-hidden="true"></i> Downloadable Forms</h2>
+				<div id="form-downloads" class="section__content-tile section__content-tile--full">
+					<p class="section__content-list-header">Click the links below to download the documents</p>
+					<ul class="section__content-list section__content-list--split">
+						<li class="section__content-list-item">
+							<a href="forms/New-Pt-Packet.docx" download>New Patient Packet</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="forms/Patient-HIPAA-Yearly-Update.docx" download>Annual HIPAA Acknowledgement &amp; Consent Form</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="#" download>Annual Medical History Questionnaire</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="forms/Card-Authorization-Form.docx" download>Credit Card Authorization Form</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="#" download>Patient Demographic Update Form</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="#" download>Annual Financial Policy Form</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="forms/Blank-ROI.docx" download>Release of Information (ROI) Form</a>
+						</li>
+						<li class="section__content-list-item">
+							<a href="forms/Notic-of-Privacy-Practices.docx" download>Notice of Privacy Practices</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 		<!-- Policies -->
 		<div id="policies" class="section">
 			<div class="section__content">
 				<h2 class="section__header"><i class="fa fa-location-arrow" aria-hidden="true"></i> Policies</h2>
-				<div class="section__content-tile section__content-tile--full">
+				<div id="medical-records" class="section__content-tile section__content-tile--full">
 					<p class="section__content-list-header">Medical Records</p>
 					<ul class="section__content-list">
 						<li class="section__content-list-item">To obtain a copy of your records for personal reasons, or to give to another practice please fill out a Release of Information (ROI) and return it to the front desk receptionist.
@@ -122,11 +158,11 @@
 						</li>
 						<li class="section__content-list-item">All urgent records requests will be make priority over all other records
 						</li>
-						<li class="section__content-list-item">The Notice of Privacy Practiced is available at the front desk, or you can <a href="#" download>click here</a> for a copy.
+						<li class="section__content-list-item">The Notice of Privacy Practiced is available at the front desk, or you can <a href="forms/Notic-of-Privacy-Practices.docx" download>click here</a> for a copy.
 						</li>
 					</ul>
 				</div>
-				<div class="section__content-tile section__content-tile--left">
+				<div id="late-policy" class="section__content-tile section__content-tile--left">
 					<p class="section__content-list-header">Late Patients</p>
 					<ul class="section__content-list">
 						<li class="section__content-list-item">We are committed to pormpt service, and will work very hard, apart from emergencies, to stay on time. You may be asked to reschedule your appointment if you arrive 15 minutes or more after your scheduled appointment time.
@@ -137,7 +173,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="section__content-tile section__content-tile--right">
+				<div id="prescriptions" class="section__content-tile section__content-tile--right">
 					<p class="section__content-list-header">Perscriptions</p>
 					<ul class="section__content-list">
 						<li class="section__content-list-item">Calls for prescriptions recieved after 3:00pm will be addressed the following day.

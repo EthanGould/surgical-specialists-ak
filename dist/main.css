@@ -178,15 +178,9 @@ html * {
   padding-right: 20px;
   background-color: white;
   border-bottom: 1px solid black; }
-  .section#slide {
-    background: #94da88; }
-  .section#about {
-    background: linear-gradient(#94da88, transparent 70%); }
-  .section#team {
-    background: linear-gradient(#99ccff, transparent 80%); }
-  .section#map {
+  .section#about, .section#map {
     background: linear-gradient(#94da88, transparent 120%); }
-  .section#footer {
+  .section#footer, .section#team {
     background: linear-gradient(#99ccff, transparent 70%);
     min-height: initial; }
   .section__header {
@@ -200,21 +194,14 @@ html * {
       margin: 0 auto;
       text-align: center;
       border-bottom: none; }
-  .section__subheader {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 20px 5px 5px;
-    border-bottom: 1px solid black;
-    max-width: 960px;
-    font-size: 16px;
-    font-weight: 700; }
   .section__content {
     max-width: 960px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 20px 0; }
     .section__content--bleed {
       max-width: 100%; }
   .section__text {
-    padding: 12px 0;
+    padding-bottom: 20px;
     line-height: 20px;
     font-size: 14px; }
   .section__about {
@@ -244,32 +231,30 @@ html * {
     overflow: auto; }
   .section__content-tile {
     width: 100%;
-    border-radius: 10px;
+    overflow: auto;
     margin-bottom: 20px;
     padding: 15px;
+    border-radius: 10px;
     box-shadow: 0 5px 10px lightgray; }
-    .section__content-tile--full {
+    .section__content-tile#medical-records, .section__content-tile#prescription-refills {
       background-image: radial-gradient(ellipse, white 0%, yellow 150%); }
-    .section__content-tile--left {
+    .section__content-tile#form-downloads, .section__content-tile#prescriptions, .section__content-tile#options {
+      background-image: radial-gradient(ellipse, white 0%, #94da88 150%); }
+    .section__content-tile#emergencies {
+      background-image: radial-gradient(ellipse, white 0%, #ff6666 150%); }
+    .section__content-tile#late-policy, .section__content-tile#appointments {
       background-image: radial-gradient(ellipse, white 0%, #99ccff 150%); }
-    .section__content-tile--right {
-      background-image: radial-gradient(ellipse, white 0%, pink 150%); }
-    .section__content-tile--appointments {
-      background-image: radial-gradient(ellipse, white 0%, green 150%); }
-    .section__content-tile--emergencies {
-      background-image: radial-gradient(ellipse, white 0%, purple 150%); }
-    .section__content-tile--refills {
-      background-image: radial-gradient(ellipse, white 0%, #99ccff 150%); }
-    .section__content-tile--options {
-      background-image: radial-gradient(ellipse, white 0%, pink 150%); }
   .section__content-list {
     padding: 15px; }
     .section__content-list-header {
       text-align: center;
-      text-decoration: underline;
       font-weight: 700; }
     .section__content-list-item {
       padding: 10px 0; }
+    .section__content-list a {
+      color: #007FFF; }
+    .section__content-list a[href="#"] {
+      color: red; }
   .section__map-overlay {
     background: transparent;
     position: relative;
@@ -287,14 +272,6 @@ html * {
     box-shadow: 0 0 15px #343434; }
 
 @media (min-width: 700px) {
-  .section__content-tile--appointments {
-    width: 100%; }
-  .section__content-tile--emergencies, .section__content-tile--options {
-    float: left;
-    width: 49%; }
-  .section__content-tile--refills {
-    float: right;
-    width: 49%; }
   .section__content-tile--full {
     width: 100%; }
   .section__content-tile--left, .section__content-tile--right {
@@ -302,6 +279,9 @@ html * {
     width: 49%; }
   .section__content-tile--left {
     margin-right: 2%; }
+  .section__content-list--split .section__content-list-item {
+    float: left;
+    width: 49%; }
   .section__about-left {
     display: table;
     position: relative;

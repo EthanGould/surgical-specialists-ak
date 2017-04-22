@@ -13,23 +13,13 @@ $module-name: 'section';
 	background-color: $white;
 	border-bottom: 1px solid $black;
 
-	&#slide {
-		background: rgb(148, 218, 136);
-	}
-
-	&#about {
-		background: linear-gradient(rgb(148, 218, 136), transparent 70%);
-	}
-
-	&#team {
-		background: linear-gradient( $lightblue, transparent 80%);
-	}
-
+	&#about,
 	&#map {
-		background: linear-gradient(rgb(148, 218, 136), transparent 120%);
+		background: linear-gradient($earth-green, transparent 120%);
 	}
 
-	&#footer {
+	&#footer,
+	&#team {
 		background: linear-gradient($lightblue, transparent 70%);
 		min-height: initial;
 	}
@@ -49,19 +39,10 @@ $module-name: 'section';
 		}
 	}
 
-	&__subheader {
-		display: inline-block;
-    margin-bottom: 20px;
-    padding: 20px 5px 5px;
-    border-bottom: 1px solid black;
-    max-width: 960px;
-    font-size: 16px;
-    font-weight: 700;
-	}
-
 	&__content {
 		max-width: $max-site-width;
 		margin: 0 auto;
+		padding: 20px 0;
 
 		&--bleed {
 			max-width: 100%;
@@ -69,7 +50,7 @@ $module-name: 'section';
 	}
 
 	&__text {
-		padding: 12px 0;
+		padding-bottom: 20px;
     line-height: 20px;
 		font-size: 14px;
 	}
@@ -115,37 +96,30 @@ $module-name: 'section';
 
 	&__content-tile {
 		width: 100%;
-		border-radius: 10px;
+		overflow: auto;
 		margin-bottom: 20px;
 		padding: 15px;
+		border-radius: 10px;
 		box-shadow: 0 5px 10px lightgray;
 
-		&--full {
-			background-image: radial-gradient(ellipse, white 0%,  yellow 150%);
+		&#medical-records,
+		&#prescription-refills {
+			background-image: radial-gradient(ellipse, white 0%,  $yellow 150%);
 		}
 
-		&--left {
+		&#form-downloads,
+		&#prescriptions,
+		&#options {
+			background-image: radial-gradient(ellipse, white 0%,  $earth-green 150%);
+		}
+
+		&#emergencies {
+			background-image: radial-gradient(ellipse, white 0%, $red 150%);
+		}
+
+		&#late-policy,
+		&#appointments {
 			background-image: radial-gradient(ellipse, white 0%, $lightblue 150%);
-		}
-
-		&--right {
-			background-image: radial-gradient(ellipse, white 0%, pink 150%);
-		}
-
-		&--appointments {
-			background-image: radial-gradient(ellipse, white 0%,  green 150%);
-		}
-
-		&--emergencies {
-			background-image: radial-gradient(ellipse, white 0%, purple 150%);
-		}
-
-		&--refills {
-			background-image: radial-gradient(ellipse, white 0%, $lightblue 150%);
-		}
-
-		&--options {
-			background-image: radial-gradient(ellipse, white 0%, pink 150%);
 		}
 	}
 
@@ -154,12 +128,20 @@ $module-name: 'section';
 
 		&-header {
 			text-align: center;
-			text-decoration: underline;
 			font-weight: 700;
 		}
 
 		&-item {
 			padding: 10px 0;
+		}
+
+		a {
+			color: $blue;
+		}
+
+		// Highlight links that still need URLs.
+		a[href="#"] {
+			color: red;
 		}
 	}
 
@@ -187,23 +169,6 @@ $module-name: 'section';
 @media( min-width: $mid)  {
 	.#{$module-name} {
 
-		// Patients Section
-		&__content-tile--appointments {
-			width: 100%;
-		}
-
-		&__content-tile--emergencies,
-		&__content-tile--options {
-			float: left;
-			width: 49%;
-		}
-
-		&__content-tile--refills {
-			float: right;
-			width: 49%;
-		}
-
-		// Policies Section
 		&__content-tile--full {
 			width: 100%;
 		}
@@ -218,6 +183,12 @@ $module-name: 'section';
 			margin-right: 2%;
 		}
 
+		&__content-list--split {
+			.#{$module-name}__content-list-item {
+				float: left;
+				width: 49%;
+			}
+		}
 
 		// About Section.
 		&__about-left {
