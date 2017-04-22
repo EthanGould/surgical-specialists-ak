@@ -2,10 +2,9 @@
  * Site Navigation
  */
 
-$module-name: 'nav';
+$nav: 'nav';
 
-// .nav {}
-.#{$module-name} {
+.#{$nav} {
 	display: table;
 	height: 60px;
 	width: 100%;
@@ -20,13 +19,13 @@ $module-name: 'nav';
 		top: 0;
 		box-shadow: 0 0 10px $gray;
 
-		.#{$module-name}__item:not( .#{$module-name}__item--scrolled ) {
+		.#{$nav}__item:not( .#{$nav}__item--scrolled ) {
 			animation-name: slideOut;
 			animation-duration: 1s;
 			animation-fill-mode: forwards;
 		}
 
-		.#{$module-name}__item--scrolled {
+		.#{$nav}__item--scrolled {
 			animation-name: fadeIn;
 			animation-duration: 2s;
 			animation-fill-mode: forwards;
@@ -41,6 +40,7 @@ $module-name: 'nav';
 		color: $black;
 		display: table;
 		width: 100%;
+		max-width: 960px;
 		height: 60px;
 		overflow: auto;
 	}
@@ -97,18 +97,19 @@ $module-name: 'nav';
 		padding: 18px 0;
 		font-family: $open-sans;
 		text-decoration: none;
-		text-transform: capitalize;
+		text-transform: uppercase;
 		color: $darkblue;
+		font-weight: 700;
 	}
 }
 
 @media( min-width: $mid ) {
-	.#{$module-name} {
+	.#{$nav} {
 
 		&--scrolled {
 			height: 120px;
 
-			.#{$module-name}__item--scrolled {
+			.#{$nav}__item--scrolled {
 
 				&:nth-child(1) {
 					left: 20px;

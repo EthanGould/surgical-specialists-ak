@@ -69,6 +69,7 @@ html * {
     color: black;
     display: table;
     width: 100%;
+    max-width: 960px;
     height: 60px;
     overflow: auto; }
   .nav__item {
@@ -106,8 +107,9 @@ html * {
     padding: 18px 0;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    text-transform: capitalize;
-    color: #003366; }
+    text-transform: uppercase;
+    color: #003366;
+    font-weight: 700; }
 
 @media (min-width: 700px) {
   .nav--scrolled {
@@ -204,6 +206,8 @@ html * {
     padding-bottom: 20px;
     line-height: 20px;
     font-size: 14px; }
+  .section__text--centered {
+    text-align: center; }
   .section__about {
     display: table;
     position: relative;
@@ -233,7 +237,7 @@ html * {
     width: 100%;
     overflow: auto;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 5px 10px lightgray; }
     .section__content-tile#medical-records, .section__content-tile#prescription-refills {
