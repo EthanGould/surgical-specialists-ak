@@ -15,13 +15,12 @@ $module-name: 'section';
 
 	&#about,
 	&#map {
-		background: linear-gradient($earth-green, transparent 120%);
+
 	}
 
 	&#footer,
 	&#team {
-		background: linear-gradient($lightblue, transparent 70%);
-		min-height: initial;
+
 	}
 
 	&__header {
@@ -37,6 +36,17 @@ $module-name: 'section';
 			text-align: center;
 			border-bottom: none;
 		}
+
+		&--spacing {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__wrapper {
+		display: inline-block;
+		margin: 0 auto;
+		width: 49%;
+		text-align: center;
 	}
 
 	&__content {
@@ -164,7 +174,7 @@ $module-name: 'section';
 		iframe {
 			width: 100%;
 			height: 300px;
-			margin: 50px 0 100px;
+			margin: 50px 0 40px;
 			box-shadow: 0 0 15px $darkgray;
 		}
 	}

@@ -26,18 +26,24 @@ html * {
 /**
  * Site Header
  */
-.header {
-  background: linear-gradient(#99ccff, white 50%, #99ccff 100%);
-  text-align: center; }
-  .header__content {
-    max-width: 960px;
-    margin: 0 auto; }
-  .header__img {
-    width: 200px; }
+.header__content {
+  margin: 0 auto; }
+.header__img {
+  background-image: url(../images/ssofalaska-cover.png);
+  max-width: 100%;
+  height: 300px;
+  background-position: 91% 0%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media (min-width: 700px) {
   .header__img {
-    width: 300px; } }
+    background-image: url(../images/ssofalaska-cover.png);
+    max-width: 100%;
+    height: 300px;
+    background-position: 91% 0%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; } }
 /**
  * Site Navigation
  */
@@ -180,11 +186,6 @@ html * {
   padding-right: 20px;
   background-color: white;
   border-bottom: 1px solid black; }
-  .section#about, .section#map {
-    background: linear-gradient(#94da88, transparent 120%); }
-  .section#footer, .section#team {
-    background: linear-gradient(#99ccff, transparent 70%);
-    min-height: initial; }
   .section__header {
     display: inline-block;
     margin-bottom: 20px;
@@ -196,6 +197,13 @@ html * {
       margin: 0 auto;
       text-align: center;
       border-bottom: none; }
+    .section__header--spacing {
+      margin-bottom: 40px; }
+  .section__wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    width: 49%;
+    text-align: center; }
   .section__content {
     max-width: 960px;
     margin: 0 auto;
@@ -272,7 +280,7 @@ html * {
   .section__map iframe {
     width: 100%;
     height: 300px;
-    margin: 50px 0 100px;
+    margin: 50px 0 40px;
     box-shadow: 0 0 15px #343434; }
 
 @media (min-width: 700px) {

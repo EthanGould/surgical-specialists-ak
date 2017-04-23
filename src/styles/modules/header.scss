@@ -6,16 +6,18 @@ $module-name: 'header';
 
 // .header {}
 .#{$module-name} {
-	background: linear-gradient($lightblue, $white 50%, $lightblue 100%);
-	text-align: center;
 
 	&__content {
-		max-width: $max-site-width;
 		margin: 0 auto;
 	}
 
 	&__img {
-		width: 200px;
+		background-image: url(../images/ssofalaska-cover.png);
+    max-width: 100%;
+    height: 300px;
+    background-position: 91% 0%;
+		background-repeat: no-repeat;
+    background-size: cover;
 	}
 }
 
@@ -23,7 +25,12 @@ $module-name: 'header';
 @media( min-width: $mid)  {
 	.#{$module-name} {
 		&__img {
-			width: 300px;
+			background-image: url(../images/ssofalaska-cover.png);
+	    max-width: 100%;
+	    height: 300px;
+	    background-position: 91% 0%;
+			background-repeat: no-repeat;
+	    background-size: 100% 100%;
 		}
 	}
 }
