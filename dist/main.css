@@ -40,7 +40,7 @@ html * {
   .header__img {
     background-image: url(../images/ssofalaska-cover.png);
     max-width: 100%;
-    height: 300px;
+    height: 384px;
     background-position: 91% 0%;
     background-repeat: no-repeat;
     background-size: 100% 100%; } }
@@ -108,6 +108,19 @@ html * {
     .nav__item:hover a {
       color: #007FFF; }
   .nav__link {
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    padding: 22px 9px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #003366;
+    font-weight: 700;
+    font-size: 11px; }
+
+@media (min-width: 700px) {
+  .nav__link {
     display: inline-block;
     width: 100%;
     padding: 18px 0;
@@ -115,9 +128,8 @@ html * {
     text-decoration: none;
     text-transform: uppercase;
     color: #003366;
-    font-weight: 700; }
-
-@media (min-width: 700px) {
+    font-weight: 700;
+    font-size: 20px; }
   .nav--scrolled {
     height: 120px; }
     .nav--scrolled .nav__item--scrolled:nth-child(1) {
@@ -282,6 +294,44 @@ html * {
     height: 300px;
     margin: 50px 0 40px;
     box-shadow: 0 0 15px #343434; }
+  .section__figure {
+    margin: 0;
+    padding: 0; }
+  .section__teammate {
+    margin: 0;
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 350px; }
+  .section__kris {
+    display: block;
+    background-image: url(../images/kris-kile.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__nametitle {
+    display: inline-table;
+    position: absolute;
+    left: 0px;
+    padding: 15px 25px;
+    background: rgba(20, 20, 20, 0.7) none repeat scroll 0% 0%;
+    color: #FFF;
+    bottom: 0px;
+    -webkit-font-smoothing: antialiased; }
+  .section__name {
+    font-family: "lubalin_graph_demiregular", Arial, sans-serif;
+    font-size: 13px;
+    width: auto; }
+  .section__title {
+    display: block;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12px; }
+  .section__you {
+    text-align: center;
+    bottom: 38%;
+    background: transparent none repeat scroll 0% 0%;
+    margin: auto;
+    width: 100%; }
 
 @media (min-width: 700px) {
   .section__content-tile--full {
@@ -294,52 +344,77 @@ html * {
   .section__content-list--split .section__content-list-item {
     float: left;
     width: 49%; }
-  .section__about-left {
-    display: table;
+  .section__figure {
+    margin: 0;
+    padding: 0; }
+  .section__teammate {
     position: relative;
-    margin-bottom: 15px;
-    padding: 15px;
-    text-align: left; }
-  .section__about-img-left {
-    width: 17%;
-    margin: 0 3% 20px 0;
+    background: #33c6fa;
+    width: 33%;
+    height: 350px; }
+  .section__kris {
     display: inline-block;
-    border-radius: 50%;
-    float: left; }
-  .section__about-name-left {
-    margin: 0px 20px 5px 11px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 30px;
-    padding-top: 10px; }
-  .section__about-info-left {
-    margin: 0px auto 30px;
-    line-height: 20px;
-    float: right;
-    width: 80%; }
-  .section__about-right {
-    display: table;
-    position: relative;
-    margin-bottom: 15px;
-    padding: 15px;
-    text-align: right; }
-  .section__about-img-right {
-    width: 17%;
-    margin: 0 0 20px 3%;
+    background-image: url(../images/kris.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__powers {
     display: inline-block;
-    border-radius: 50%;
-    float: right; }
-  .section__about-name-right {
-    margin: 0px 20px 5px 11px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 30px;
-    padding-top: 10px; }
-  .section__about-info-right {
-    margin: 0px auto 30px;
-    line-height: 20px;
-    float: left;
-    width: 80%; } }
+    background-image: url(../images/powers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__ferry {
+    display: inline-block;
+    background-image: url(../images/ferry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__ehmer {
+    display: inline-block;
+    background-image: url(../images/ehmer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%; }
+  .section__faerber {
+    display: inline-block;
+    background-image: url(../images/faerber.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__practice {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/practice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 59%; }
+  .section__color {
+    display: inline-block; }
+  .section__nametitle {
+    display: inline-table;
+    position: absolute;
+    left: 0px;
+    padding: 15px 25px;
+    background: rgba(20, 20, 20, 0.7) none repeat scroll 0% 0%;
+    color: #FFF;
+    bottom: 0px;
+    -webkit-font-smoothing: antialiased; }
+  .section__name {
+    font-family: "lubalin_graph_demiregular", Arial, sans-serif;
+    font-size: 13px;
+    width: auto; }
+  .section__title {
+    display: block;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12px; }
+  .section__you {
+    text-align: center;
+    bottom: 38%;
+    background: transparent none repeat scroll 0% 0%;
+    margin: auto;
+    width: 100%; } }
 /**
  * About Section
  */

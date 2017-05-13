@@ -92,19 +92,33 @@ $nav: 'nav';
 	}
 
 	&__link {
-		display: inline-block;
-		width: 100%;
-		padding: 18px 0;
-		font-family: $open-sans;
-		text-decoration: none;
-		text-transform: uppercase;
-		color: $darkblue;
-		font-weight: 700;
+		text-align: right;
+    display: inline-block;
+    width: 100%;
+    padding: 22px 9px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #003366;
+    font-weight: 700;
+    font-size: 11px;
 	}
 }
 
 @media( min-width: $mid ) {
 	.#{$nav} {
+
+		&__link {
+			display: inline-block;
+			width: 100%;
+			padding: 18px 0;
+			font-family: $open-sans;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $darkblue;
+			font-weight: 700;
+			font-size: 20px;
+		}
 
 		&--scrolled {
 			height: 120px;
@@ -178,11 +192,3 @@ $nav: 'nav';
 		opacity: 1;
 	}
 }
-
-
-
-
-
-
-
-
