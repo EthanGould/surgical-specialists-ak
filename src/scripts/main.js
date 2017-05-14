@@ -4,22 +4,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var module = {};
 
     module.animateNav = function() {
-        var scrolTrigger = window.innerWidth > 700 ? 225 : 152;
-        var topOffset = '60px';
-
-        // this = 'scroll' event
         var nav = document.querySelector('.nav');
 
-        if (this.scrollY > scrolTrigger) {
+        if (this.scrollY > 50) {
+            nav.classList.add('nav--slim');
+        } else if (this.scrollY > 0) {
             nav.classList.add('nav--scrolled');
-            document.querySelector('body').style.paddingTop = topOffset;
         } else {
-            nav.classList.remove('nav--scrolled');
-            document.querySelector('body').style.paddingTop = 0;
+            nav.className = 'nav';
         }
+
+        if (module.scrollY > this.scrollY) {
+            nav.classList.remove('nav--slim');
+        }
+
+        module.scrollY = this.scrollY;
+
     };
 
     module.init = function(argument) {
+        module.scrollY = 0;
         window.addEventListener('scroll', module.animateNav);
     };
 

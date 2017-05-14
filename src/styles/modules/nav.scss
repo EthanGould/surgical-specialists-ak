@@ -6,146 +6,81 @@ $nav: 'nav';
 
 .#{$nav} {
 	display: table;
-	height: 60px;
 	width: 100%;
-	background-color: $white;
-	z-index: 1;
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	position: fixed;
+	top: 0;
 	z-index: 100;
+	background-color: $white;
 
-	// Scroll on mobile, hide nav items
 	&--scrolled {
-		position: fixed;
-		top: 0;
+		border-bottom: 1px solid $lightgray;
 		box-shadow: 0 0 10px $gray;
+	}
 
-		.#{$nav}__item:not( .#{$nav}__item--scrolled ) {
-			animation-name: slideOut;
-			animation-duration: 1s;
-			animation-fill-mode: forwards;
-		}
+	&__logo {
+		width: 125px;
+		float: left;
 
-		.#{$nav}__item--scrolled {
-			animation-name: fadeIn;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			padding: 0;
-			display: inline-block;
+		img {
+			max-width: 100%;
 		}
 	}
 
 	&__items {
-		margin: 0 auto;
+		display: none;
+		float: left;
+		transition: all 1s;
 		list-style: none;
-		color: $black;
-		display: table;
-		width: 100%;
-		max-width: 960px;
-		height: 60px;
-		overflow: auto;
+		padding-right: 20px;
+		transition: padding 0.3s;
 	}
 
 	&__item {
-		float: left;
-		width: 23%;
-		text-align: center;
-		transition: height, background-color 0.1s,  transform 1s;
-		animation-name: slideIn;
-		animation-duration: 0.5s;
+		display: inline-block;
+		padding-right: 30px;
 
-		&--scrolled {
-			display: none;
-			text-align: left;
-			position: absolute;
-
-			&:nth-child(1) {
-				left: 0;
-			}
-
-			&:nth-child(2) {
-				width: 100%;
-				margin: 0 auto;
-				padding: 18px;
-				text-align: center;
-			}
-
-			&:nth-child(3) {
-				right: 10px;
-				font-size: 26px;
-				text-align: right;
-				top: -4px;
-			}
-
-			img {
-				width: 80px;
-				float: left;
-				margin-left: 10px;
-			}
-		}
-
-
-		&:hover {
-			a {
-				color: $blue;
-				transition: color 0.3s;
-			}
+		a:hover {
+			color: $blue;
+			transition: color 0.3s;
 		}
 	}
 
 	&__link {
-		text-align: right;
     display: inline-block;
     width: 100%;
-    padding: 22px 9px;
-    font-family: "Open Sans", sans-serif;
+    padding: 0 5px;
+    font-family: $open-sans;
     text-decoration: none;
     text-transform: uppercase;
     color: #003366;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 14px;
 	}
 }
 
 @media( min-width: $mid ) {
 	.#{$nav} {
+		transition: height 0.3s;
 
-		&__link {
-			display: inline-block;
-			width: 100%;
-			padding: 18px 0;
-			font-family: $open-sans;
-			text-decoration: none;
-			text-transform: uppercase;
-			color: $darkblue;
-			font-weight: 700;
-			font-size: 20px;
+		&__logo {
+			width: 150px;
+			transition: width 0.3s;
 		}
 
-		&--scrolled {
-			height: 120px;
+		&__items {
+			display: block;
+			padding: 50px;
+		}
 
-			.#{$nav}__item--scrolled {
+		&--slim {
 
-				&:nth-child(1) {
-					left: 20px;
+			.#{$nav} {
+				&__logo {
+					width: 80px;
 				}
 
-				&:nth-child(2) {
-					left: 0;
-					padding: 32px;
-					font-size: 40px;
-					font-weight: 700;
-				}
-
-				&:nth-child(3) {
-					display: none;
-				}
-
-				img {
-					width: 150px;
-					float: left;
-					margin-left: 20px;
+				&__items {
+					padding: 20px;
 				}
 			}
 		}
