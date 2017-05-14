@@ -8,34 +8,22 @@ $module-name: 'section';
 .#{$module-name} {
 	min-height: 50vh;
 	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 40px 20px;
 	background-color: $white;
-	border-bottom: 1px solid $black;
+	display: table;
 
-	&#about,
 	&#map {
-
-	}
-
-	&#footer,
-	&#team {
-
+		padding: 100px 20px;
 	}
 
 	&__header {
-		display: inline-block;
-		margin-bottom: 20px;
-		padding: 20px 5px 5px;
-		border-bottom: 1px solid $black;
+		position: absolute;
+		left: 0;
+		top: -25px;
+		padding: 5px 10px 5px 0;
 		max-width: 960px;
-
-		&--centered {
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-			border-bottom: none;
-		}
+		background-color: white;
+		z-index: 1;
 
 		&--spacing {
 			margin-bottom: 40px;
@@ -52,7 +40,17 @@ $module-name: 'section';
 	&__content {
 		max-width: $max-site-width;
 		margin: 0 auto;
-		padding: 20px 0;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -3px;
+			width: 100%;
+			height: 3px;
+			background-image: linear-gradient(to right, $lightblue 50%, transparent);
+		}
 
 		&--bleed {
 			max-width: 100%;
@@ -61,8 +59,9 @@ $module-name: 'section';
 
 	&__text {
 		padding-bottom: 20px;
-    line-height: 20px;
+    line-height: 24px;
 		font-size: 14px;
+		color: $darkgray;
 	}
 
 	&__text--centered {
@@ -105,48 +104,32 @@ $module-name: 'section';
 
 	// Policies & Patients Section.
 	&__content {
-		overflow: auto;
+		padding-top: 40px;
+		position: relative;
 	}
 
 	&__content-tile {
 		width: 100%;
 		overflow: auto;
 		margin-bottom: 20px;
-		padding: 25px;
-		border-radius: 10px;
-		box-shadow: 0 5px 10px lightgray;
-
-		&#medical-records,
-		&#prescription-refills {
-			background-image: radial-gradient(ellipse, white 0%,  $yellow 150%);
-		}
-
-		&#form-downloads,
-		&#prescriptions,
-		&#options {
-			background-image: radial-gradient(ellipse, white 0%,  $earth-green 150%);
-		}
-
-		&#emergencies {
-			background-image: radial-gradient(ellipse, white 0%, $red 150%);
-		}
-
-		&#late-policy,
-		&#appointments {
-			background-image: radial-gradient(ellipse, white 0%, $lightblue 150%);
-		}
+		position: relative;
 	}
 
 	&__content-list {
-		padding: 15px;
+		list-style: none;
 
 		&-header {
-			text-align: center;
+			margin-bottom: 10px;
 			font-weight: 700;
+			padding: 2px 3px;
+			background-color: white;
 		}
 
 		&-item {
-			padding: 10px 0;
+			margin-bottom: 20px;
+			line-height: 22px;
+			font-size: 14px;
+			color: $darkgray;
 		}
 
 		a {
