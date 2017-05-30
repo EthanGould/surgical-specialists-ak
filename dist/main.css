@@ -62,22 +62,41 @@ html * {
     box-shadow: 0 0 10px gray; }
   .nav__logo {
     width: 125px;
+    margin-left: 60px;
     float: left; }
     .nav__logo img {
       max-width: 100%; }
   .nav__items {
     display: none;
-    float: left;
+    float: right;
     transition: all 1s;
     list-style: none;
     padding-right: 20px;
     transition: padding 0.3s; }
   .nav__item {
     display: inline-block;
-    padding-right: 30px; }
+    padding: 0px 5px 0 5px;
+    position: relative; }
     .nav__item a:hover {
       color: #007FFF;
       transition: color 0.3s; }
+    .nav__item > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    .nav__item > a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
   .nav__link {
     display: inline-block;
     width: 100%;
@@ -166,6 +185,34 @@ html * {
     z-index: 1; }
     .section__header--spacing {
       margin-bottom: 40px; }
+  .section__top {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */ }
+    .section__top:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */ }
   .section__wrapper {
     display: inline-block;
     margin: 0 auto;
@@ -237,8 +284,6 @@ html * {
       color: #676767; }
     .section__content-list a {
       color: #007FFF; }
-    .section__content-list a[href="#"] {
-      color: red; }
   .section__map-overlay {
     background: transparent;
     position: relative;
@@ -292,6 +337,101 @@ html * {
     background: transparent none repeat scroll 0% 0%;
     margin: auto;
     width: 100%; }
+  .section__figure {
+    margin: 0;
+    padding: 0; }
+  .section__teammate {
+    position: relative;
+    background: #33c6fa;
+    width: 100%;
+    height: 350px; }
+  .section__kris {
+    display: block;
+    background-image: url(../images/kris.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__kris:hover {
+    display: block;
+    background-image: url(../images/SSoA6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 37%; }
+  .section__powers {
+    display: block;
+    background-image: url(../images/powers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__powers:hover {
+    display: block;
+    background-image: url(../images/powers-two.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 41%; }
+  .section__faerber {
+    display: block;
+    background-image: url(../images/Faerber-56.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 18%; }
+  .section__faerber:hover {
+    display: block;
+    background-image: url(../images/SSoA2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 18%; }
+  .section__ehmer {
+    display: block;
+    background-image: url(../images/ehmer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%; }
+  .section__ehmer:hover {
+    display: block;
+    background-image: url(../images/ehmer-two.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%; }
+  .section__ferry {
+    display: block;
+    background-image: url(../images/ferry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section__eklutna_pano_400 {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/eklutna_pano_400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 69%; }
+  .section__color {
+    display: inline-block; }
+  .section__nametitle {
+    display: inline-table;
+    position: absolute;
+    left: 0px;
+    padding: 15px 25px;
+    background: rgba(20, 20, 20, 0.7) none repeat scroll 0% 0%;
+    color: #FFF;
+    bottom: 0px;
+    -webkit-font-smoothing: antialiased; }
+  .section__name {
+    font-family: "lubalin_graph_demiregular", Arial, sans-serif;
+    font-size: 13px;
+    width: auto; }
+  .section__title {
+    display: block;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12px; }
+  .section__you {
+    text-align: center;
+    bottom: 38%;
+    background: transparent none repeat scroll 0% 0%;
+    margin: auto;
+    width: 100%; }
 
 @media (min-width: 700px) {
   .section__content-tile--full {
@@ -318,38 +458,72 @@ html * {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
+  .section__kris:hover {
+    display: inline-block;
+    background-image: url(../images/SSoA6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .section__powers {
     display: inline-block;
     background-image: url(../images/powers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
-  .section__ferry {
+  .section__powers:hover {
     display: inline-block;
-    background-image: url(../images/ferry.jpg);
+    background-image: url(../images/powers-two.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
+  .section__faerber {
+    display: inline-block;
+    background-image: url(../images/Faerber-56.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 18%; }
+  .section__faerber:hover {
+    display: inline-block;
+    background-image: url(../images/SSoA2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 18%; }
   .section__ehmer {
     display: inline-block;
     background-image: url(../images/ehmer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%; }
-  .section__faerber {
+  .section__ehmer:hover {
     display: inline-block;
-    background-image: url(../images/faerber.jpg);
+    background-image: url(../images/ehmer-two.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%; }
+  .section__ferry {
+    display: inline-block;
+    background-image: url(../images/ferry.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
-  .section__practice {
+  .section__couple-hiking {
     display: block;
     width: 100%;
-    height: 600px;
-    background-image: url(../images/practice.jpg);
+    height: 686px;
+    background-image: url(../images/couple-hiking.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100% 59%; }
+    background-position: 69%;
+    background-attachment: fixed; }
+  .section__people-hiking {
+    display: block;
+    width: 100%;
+    height: 686px;
+    background-image: url(../images/people-hiking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 69%;
+    background-attachment: fixed; }
   .section__color {
     display: inline-block; }
   .section__nametitle {
@@ -374,7 +548,8 @@ html * {
     bottom: 38%;
     background: transparent none repeat scroll 0% 0%;
     margin: auto;
-    width: 100%; } }
+    width: 100%;
+    font-size: 20px; } }
 /**
  * About Section
  */

@@ -30,6 +30,25 @@ $module-name: 'section';
 		}
 	}
 
+	&__top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+
+		&:hover {
+		    background-color: #555; /* Add a dark-grey background on hover */
+		}
+	}
+
 	&__wrapper {
 		display: inline-block;
 		margin: 0 auto;
@@ -137,9 +156,6 @@ $module-name: 'section';
 		}
 
 		// Highlight links that still need URLs.
-		a[href="#"] {
-			color: red;
-		}
 	}
 
 	// Map Section.
@@ -213,6 +229,136 @@ $module-name: 'section';
     margin: auto;
     width: 100%;
 	}
+
+	// About Section.
+	&__figure {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__teammate {
+		position: relative;
+		background: rgb(51, 198, 250);
+		width: 100%;
+		height: 350px;
+	}
+
+	&__kris {
+		display: block;
+		background-image: url(../images/kris.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__kris:hover {
+		display: block;
+		background-image: url(../images/SSoA6.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 37%;
+	}
+
+	&__powers {
+		display: block;
+		background-image: url(../images/powers.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__powers:hover {
+		display: block;
+		background-image: url(../images/powers-two.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 41%;
+	}
+
+	&__faerber {
+		display: block;
+		background-image: url(../images/Faerber-56.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 18%;
+	}
+
+	&__faerber:hover {
+		display: block;
+		background-image: url(../images/SSoA2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 18%;
+	}
+
+	&__ehmer {
+		display: block;
+		background-image: url(../images/ehmer.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 30%;
+	}
+
+	&__ehmer:hover {
+		display: block;
+		background-image: url(../images/ehmer-two.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 30%;
+	}
+
+	&__ferry {
+		display: block;
+		background-image: url(../images/ferry.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__eklutna_pano_400 {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background-image: url(../images/eklutna_pano_400.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 69%;
+	}
+
+	&__color {
+		display: inline-block;
+	}
+
+	&__nametitle {
+		display: inline-table;
+		position: absolute;
+		left: 0px;
+		padding: 15px 25px;
+		background: rgba(20, 20, 20, .7) none repeat scroll 0% 0%;
+		color: #FFF;
+		bottom: 0px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	&__name {
+		font-family: "lubalin_graph_demiregular", Arial, sans-serif;
+		font-size: 13px;
+		width: auto;
+	}
+
+	&__title {
+		display: block;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 12px;
+	}
+
+	&__you {
+		text-align: center;
+		bottom: 38%;
+		background: transparent none repeat scroll 0% 0%;
+		margin: auto;
+		width: 100%;
+	}
 }
 
 @media( min-width: $mid)  {
@@ -260,6 +406,14 @@ $module-name: 'section';
     	background-position: center;
 		}
 
+		&__kris:hover {
+			display: inline-block;
+			background-image: url(../images/SSoA6.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
 		&__powers {
 			display: inline-block;
 			background-image: url(../images/powers.jpg);
@@ -268,12 +422,28 @@ $module-name: 'section';
     	background-position: center;
 		}
 
-		&__ferry {
+		&__powers:hover {
 			display: inline-block;
-			background-image: url(../images/ferry.jpg);
+			background-image: url(../images/powers-two.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		&__faerber {
+			display: inline-block;
+			background-image: url(../images/Faerber-56.jpg);
 			background-size: cover;
     	background-repeat: no-repeat;
-    	background-position: center;
+    	background-position: center 18%;
+		}
+
+		&__faerber:hover {
+			display: inline-block;
+			background-image: url(../images/SSoA2.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center 18%;
 		}
 
 		&__ehmer {
@@ -284,22 +454,44 @@ $module-name: 'section';
     	background-position: center 30%;
 		}
 
-		&__faerber {
+		&__ehmer:hover {
 			display: inline-block;
-			background-image: url(../images/faerber.jpg);
+			background-image: url(../images/ehmer-two.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center 30%;
+		}
+
+		&__ferry {
+			display: inline-block;
+			background-image: url(../images/ferry.jpg);
 			background-size: cover;
     	background-repeat: no-repeat;
     	background-position: center;
 		}
+// Hero Images
 
-		&__practice {
+		&__couple-hiking {
 			display: block;
 			width: 100%;
-			height: 600px;
-			background-image: url(../images/practice.jpg);
+			height: 686px;
+			background-image: url(../images/couple-hiking.webp);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 69%;
+			background-attachment: fixed;
+
+
+		}
+		&__people-hiking {
+			display: block;
+			width: 100%;
+			height: 686px;
+			background-image: url(../images/people-hiking.jpg);
 			background-size: cover;
     	background-repeat: no-repeat;
-    	background-position: 100% 59%;
+    	background-position: 69%;
+			background-attachment: fixed;
 		}
 
 		&__color {
@@ -335,6 +527,7 @@ $module-name: 'section';
 	    background: transparent none repeat scroll 0% 0%;
 	    margin: auto;
 	    width: 100%;
+			font-size: 20px;
 		}
 	}
 }
